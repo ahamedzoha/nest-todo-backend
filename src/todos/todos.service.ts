@@ -17,7 +17,10 @@ export class TodosService {
   }
 
   update(id: number, updateTodoDto: UpdateTodoDto) {
-    return `This action updates a #${id} todo`
+    return {
+      message: `This action updates a #${id} todo`,
+      updateTodoDto,
+    }
   }
 
   remove(id: number) {
